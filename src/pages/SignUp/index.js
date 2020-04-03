@@ -82,11 +82,3 @@ export default function SignUp({ navigation }) {
     </Background>
   );
 }
-
-SignUp.propTypes = {
-  navigation: PropTypes.shape,
-};
-
-SignUp.defaultProps = {
-  navigation: null,
-};

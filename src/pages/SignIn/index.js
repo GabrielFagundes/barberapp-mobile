@@ -68,11 +68,3 @@ export default function SignIn({ navigation }) {
     </Background>
   );
 }
-
-SignIn.propTypes = {
-  navigation: PropTypes.shape,
-};
-
-SignIn.defaultProps = {
-  navigation: null,
-};
