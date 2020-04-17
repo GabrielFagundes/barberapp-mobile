@@ -55,7 +55,7 @@ function Dashboard({ isFocused }) {
 Dashboard.navigationOptions = {
   tabBarLabel: 'Appointments',
   tabBarIcon: ({ tintColor }) => (
-    <Icon name="event" size={20} color={tintColor} />
+    <Icon name="alarm-add" size={30} color={tintColor} />
   ),
 };
 

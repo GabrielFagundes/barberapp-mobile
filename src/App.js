@@ -3,6 +3,9 @@ import { useSelector } from 'react-redux';
 
 import createRouter from './routes';
 
+// eslint-disable-next-line
+console.disableYellowBox = true;
+
 export default function src() {
   const signed = useSelector((state) => state.auth.signed);
 

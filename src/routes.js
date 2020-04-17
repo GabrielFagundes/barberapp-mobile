@@ -3,7 +3,7 @@ import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
 
-import Icon from 'react-native-vector-icons/MaterialIcons';
+import TabBarButton from '~/components/TabBarButton';
 
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
@@ -45,14 +45,7 @@ export default (signedIn = false) =>
               ),
               navigationOptions: {
                 tabBarVisible: false,
-                tabBarLabel: 'Schedule',
-                tabBarIcon: (
-                  <Icon
-                    name="add-circle-outline"
-                    size={30}
-                    color="rgba(255,255,255,0.6)"
-                  />
-                ),
+                tabBarIcon: <TabBarButton />,
               },
             },
             Profile,
@@ -60,11 +53,12 @@ export default (signedIn = false) =>
           {
             resetOnBlur: true,
             tabBarOptions: {
+              showLabel: false,
               keyboardHidesTabBar: true,
-              activeTintColor: '#FFF',
+              activeTintColor: '#FFCB74',
               inactiveTintColor: 'rgba(255,255,255,0.6)',
               style: {
-                backgroundColor: '#8d41a8',
+                backgroundColor: '#4D4D4D',
               },
             },
           }
